@@ -139,3 +139,13 @@
 .toggler:checked ~ .menu > div > div{
 	opacity: 1;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.menu-wrap{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+}
