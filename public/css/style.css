@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
+body {
+	font-family: 'Alegreya Sans', sans-serif;
+	overflow-x: hidden;
+}
+.nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	opacity: .9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.7s;
+}
+.nav a {
+	display: block;
+	padding: 20px 35px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #ccc;
+}
+.nav a:hover {
+	color: #fff;
+	transition: 0.4s;
+}
+.nav .close {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	margin-left: 50px;
+	font-size: 30px
+}
+.slide a {
+	color: #000;
+	font-size: 36px;
+	position: fixed;
+}
+#content {
+	padding: 20px;
+	transition: margin-left 0.7s;
+	overflow: hidden;
+	width: 100%;
+}
+.heading{
+	background: #b8b894;
+	text-align: center;
+}
+.ll
+{
+color: #fff;
+align-content: center;
+align-self: center;
+text-align: center;
+margin-bottom: 15px;
+align-items: center;
+}
+.courses_wrap
+{
+	background: #000;
+	align-content: center;
+align-self: center;
+text-align: center;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+.course_content h2
+{
+	color: #fff;
+	
+}
+.courses_wrap a:link
+{
+    text-decoration:none;
+
+}
+#footer_down
+{
+   background-color: #141f1a;
+}
+.middle
+{
+	background: #b8b894;	
+}
+.l2
+{
+color: #fff;
+align-content: center;
+align-self: center;
+text-align: center;
+margin-bottom: 10px;
+
+}
+#sticky-footer {
+	flex-shrink: none;
+  }
+  .fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+  }
+.bottom li
+{
+	color: #141f1a;
+	background-color:#141f1a;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
