@@ -140,7 +140,7 @@
 	opacity: 1;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media  (max-width: 600px) {
 	.menu-wrap{
 		position: fixed;
 		top: 0;
