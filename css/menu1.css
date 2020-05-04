@@ -234,15 +234,4 @@ body {
 		-ms-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 	  }
-	  .card1
-	  {
-		  width:40rem;
-		 
-	  }
- @media (max-width:767px){
-.card1
-{
-	width:20rem;
-	
-}
-	  }
+
