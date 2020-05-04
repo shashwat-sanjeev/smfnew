@@ -246,10 +246,10 @@ body {
 	
 }
  }
- @media (max-width:450px){
+ @media (max-width:400px){
 	.card1
 	{
-		width:10rem;
+		width:7rem;
 		
 	}
 	 }
