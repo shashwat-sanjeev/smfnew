@@ -246,10 +246,10 @@ body {
 	
 }
  }
- @media  only screen and (max-width: 500px){
+ @media  only screen and (max-width: 450px){
 	.card1
 	{
-		width:15rem;
+		width:20rem;
 		
 	}
 	 }
