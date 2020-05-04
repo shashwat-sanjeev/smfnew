@@ -239,11 +239,18 @@ body {
 		  width:40rem;
 		 
 	  }
+	  @media (max-width:767px){
+		.card1
+		{
+			width:25rem;
+			
+		}
+		 }
 
  @media (max-width:450px){
 	.card1
 	{
-		width:15rem;
+		width:300px;
 		
 	}
 	 }
