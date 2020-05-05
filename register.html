@@ -21,17 +21,19 @@ body {
 }
 
 form {
-  max-width: 400px;
+  max-width: 300px;
   margin: 35px auto;
   border-radius: 10px;
   padding: 10px 25px;
-  background: rgb(219, 217, 221);
+ background: rgba(0, 0, 0, 0.91);
+ font-color:#fff;
 }
 
 h3 {
   margin: 0 0 10px 0;
   text-align: center;
   margin-top: 5px;
+  color:#fff;
 }
 
 .alert {
@@ -52,8 +54,7 @@ select {
   border: 1px;
   margin-bottom: 25px;
   box-shadow: 2px;
-  color: rgb(240, 240, 234);
-  background-color: rgb(127, 127, 131);
+  color: #fff;
   width: 100%;
   padding: 1px;
   margin: 0;
@@ -65,6 +66,7 @@ select {
   padding: 1px;
   height: 32px;
   border-radius: 2px;
+  color:#fff;
 }
 
 fieldset {
@@ -75,11 +77,13 @@ fieldset {
 legend {
   display: block;
   margin-bottom: 0px;
+  color:#fff;
 }
 
 label.light {
   font-weight: 100;
   display: inline;
+  color:#fff;
 }
 
 .section {
@@ -98,6 +102,7 @@ label.light {
 label {
   display: block;
   margin-bottom: 1px;
+  color:#fff;
 }
 
 button {
@@ -111,9 +116,11 @@ button {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   form {
-    max-width: 480px;
+    max-width: 300px;
+    margin-top:20px;
+    margin-bottom:30px;
   }
 }
   body, html {
@@ -145,16 +152,40 @@ button {
 	background-repeat: no-repeat;
 	background-size: cover;
   }
+  form {
+    max-width: 480px;
+  }
+  .size
+  {
+ margin-top:55px;
+margin-bottom: 10px;
+width:500px;
+  }
+  @media screen and (max-width: 480px) {
+  .size {
+    margin-top:55px;
+  margin-bottom: 10px;
+  width:300px;
+  }
+}
+ @media screen and (max-width: 767px) {
+  .size {
+   
+  margin-bottom: 18px;
+  width:300px;
+ 
+  }
+}
 </style>
 <span style="font-size:30px;cursor:pointer;position:fixed;color:#fff;margin-left:10px" onclick="openNav()">&#9776; </span>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">Subscription</a>
+  <a href="new.html">Home</a>
+  <a href="subscription.html">Subscription</a>
   <a href="#">Category</a>
   <a href="#">Setting</a>
   <a href="#">Feedback</a>
-  <a href="#">About us</a>
+  <a href="about us.html">About us</a>
   <a href="#">Contact</a>
 </div>
 <div class="parallax">
@@ -165,13 +196,13 @@ button {
 <a class="btn  btn-outline-danger" style="color:#fff;border-color:#fff;fill-color:#000">Dashboard</a>
          </div>
      </div>
-  <div class="center1">
+  <div class="center1 size">
     <form action="" method="POST" id="registrationform">
-        <h3 align="center">Register</h3>
+        <h3 align="center" >Register</h3>
         <div class="alert">Registered!</div>
         <fieldset>
           <!-- Section 1 -->
-          <legend >Your Basic Info</legend>
+          <legend style="font-color:#fff;">Your Basic Info</legend>
           <label class="" for="name">Name</label>
           <input type="text" name="name" value="" id="name" required />
     
@@ -212,42 +243,7 @@ button {
   </div>
 </div>
 </div>
-
-<div style="height:700px;background-color:#000;font-size:36px">
-<div class="row pt-5">
-<div class="col lg-1 col-centered">
-<div class="card col-centered" style="width: 40rem;background-color:#000">
-  <img class="card-img-top" src="assets/dance2.jpg" alt="Card image cap" >
-  <div class="card-body">
-    <a class="card-text text-white text-center" href="#">Check it Out <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z" clip-rule="evenodd"/>
-  <path fill-rule="evenodd" d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z" clip-rule="evenodd"/>
-</svg></a>
-  </div>
-</div>
-</div>
-</div>
-</div>
-<div class="parallax">
-<div class="row pt-5">
-<div class="col lg-1 col-centered">
-<div class="card col-centered " style="width: 40rem;background-color:#00FFFFFF ">
-  <img class="card-img-top" src="assets/dance2.jpg" alt="Card image cap" >
-  <div class="card-body">
-    <a class="card-text text-white text-center" href="#">We Provide high quality learning <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z" clip-rule="evenodd"/>
-  <path fill-rule="evenodd" d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z" clip-rule="evenodd"/>
-</svg></a>
-  </div>
-</div>
-</div>
-</div>
-</div>
-
-       
-</div>
-</div>
-</div>
+<br><br><br>
  <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -259,8 +255,8 @@ button {
           <div class="col-xs-6 col-md-3">
             <h6>Categories</h6>
             <ul class="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Subscription</a></li>
+              <li><a href="new.html">Home</a></li>
+              <li><a href="subscription.html">Subscription</a></li>
               <li><a href="#">Setting</a></li>
               <li><a href="#">feedback</a></li>
               <li><a href="#">projects</a></li>
@@ -271,7 +267,7 @@ button {
           <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="#">About Us</a></li>
+              <li><a href="about us.html">About Us</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Contribute</a></li>
               <li><a href="#">Privacy Policy</a></li>
@@ -303,5 +299,13 @@ button {
 
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
     <script src="app.js"></script>
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 </html>
