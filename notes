@@ -1,2 +1,8 @@
 git status
+git add filename
+git commit -m "new commit"
+
 git push -u origin master
+git fetch origin
+git reset --hard origin/master
+git clean -f -d

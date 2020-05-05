@@ -42,12 +42,12 @@
 <span style="font-size:30px;cursor:pointer;position:fixed;color:#fff;margin-left:10px" onclick="openNav()">&#9776; </span>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
+  <a href="new.html">Home</a>
   <a href="#">Subscription</a>
   <a href="#">Category</a>
   <a href="#">Setting</a>
   <a href="#">Feedback</a>
-  <a href="#">About us</a>
+  <a href="about us.html">About us</a>
   <a href="#">Contact</a>
 </div>
 <div class="parallax">
@@ -59,7 +59,7 @@
          </div>
      </div>
   <div class="center1">
-    <a class="btn btn-lg btn-outline-primary" style="color:#fff;border-color:#fff;fill-color:#000">Sign Up Now</a>
+    <a class="btn btn-lg btn-outline-primary" href="./login_authentication/index.html" style="color:#fff;border-color:#fff;fill-color:#000">Sign Up Now</a>
   </div>
 </div>
 </div>
@@ -67,7 +67,7 @@
 <div style="height:700px;background-color:#000;font-size:36px">
 <div class="row pt-5">
 <div class="col lg-1 col-centered">
-<div class="card col-centered" style="width: 40rem;background-color:#000">
+<div class="card col-centered card1" style="background-color:#000">
   <img class="card-img-top" src="assets/dance2.jpg" alt="Card image cap" >
   <div class="card-body">
     <a class="card-text text-white text-center" href="#">Check it Out <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,7 @@
 <div class="parallax">
 <div class="row pt-5">
 <div class="col lg-1 col-centered">
-<div class="card col-centered " style="width: 40rem;background-color:#00FFFFFF ">
+<div class="card col-centered card1" style="background-color:#00FFFFFF ">
   <img class="card-img-top" src="assets/dance2.jpg" alt="Card image cap" >
   <div class="card-body">
     <a class="card-text text-white text-center" href="#">We Provide high quality learning <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +127,7 @@
           <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="#">About Us</a></li>
+              <li><a href="about us.html">About Us</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Contribute</a></li>
               <li><a href="#">Privacy Policy</a></li>
@@ -159,9 +159,8 @@
 
 <script>
 function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.width = "250px";
 }
-
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
