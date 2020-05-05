@@ -9,6 +9,113 @@
 </head>
 <body>
 <style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  color: rgb(24, 23, 22);
+  background-color: rgb(7, 7, 7);
+}
+
+form {
+  max-width: 400px;
+  margin: 35px auto;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: rgb(219, 217, 221);
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.alert {
+  text-align: center;
+  padding: 5px;
+  background: rgb(168, 240, 177);
+  color: green;
+  margin-bottom: 5px;
+  display: none;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='age'],
+textarea,
+select {
+  background: lightsteelblue;
+  border: 1px;
+  margin-bottom: 25px;
+  box-shadow: 2px;
+  color: rgb(240, 240, 234);
+  background-color: rgb(127, 127, 131);
+  width: 100%;
+  padding: 1px;
+  margin: 0;
+  height: auto;
+  font-size: 15px;
+}
+
+select {
+  padding: 1px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  display: block;
+  margin-bottom: 0px;
+}
+
+label.light {
+  font-weight: 100;
+  display: inline;
+}
+
+.section {
+  background-color: rgb(68, 114, 221);
+  color: white;
+  height: 1px;
+  display: inline-block;
+  width: 2px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 3px;
+  margin-right: 4px;
+  font-size: 0.7em;
+}
+
+label {
+  display: block;
+  margin-bottom: 1px;
+}
+
+button {
+  padding: 25px 40px;
+  color: whitesmoke;
+  background-color: rgb(36, 159, 235);
+  font-size: 15px;
+  margin: 30px 0px 0px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 480px;
+  }
+}
   body, html {
 	height: 100%;
   }
@@ -59,67 +166,49 @@
          </div>
      </div>
   <div class="center1">
-    <form class="needs-validation" novalidate>
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validationTooltip01" style="color:#fff;border-color:#fff;fill-color:#000">First name</label>
-            <input type="text" class="form-control" id="validationTooltip01" placeholder="First name"  required>
-            <div class="valid-tooltip">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationTooltip02" style="color:#fff;border-color:#fff;fill-color:#000">Last name</label>
-            <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" required>
-            <div class="valid-tooltip">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationTooltipUsername" style="color:#fff;border-color:#fff">Username</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="validationTooltipGenderPrepend">@</span>
-              </div>
-              <input type="text" class="form-control" id="validationTooltipUsername" placeholder="username" aria-describedby="validationTooltipUsernamePrepend" required>
-              <div class="invalid-tooltip">
-                Please choose a unique and valid username.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationTooltip03" style="color:#fff;border-color:#fff;fill-color:#000">Email Address</label>
-            <input type="text" class="form-control" id="validationTooltip03" placeholder="Email" required>
-            <div class="invalid-tooltip">
-              Please provide a valid email id.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationTooltip04" style="color:#fff;border-color:#fff;fill-color:#000">Gender</label>
-            <input type="text" class="form-control" id="validationTooltip04" placeholder="gender" required>
-            <div class="invalid-tooltip">
-              Please provide a valid gender.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationTooltip04" style="color:#fff;border-color:#fff;fill-color:#000">Pin Code</label>
-            <input type="text" class="form-control" id="validationTooltip04" placeholder="Pin code" required>
-            <div class="invalid-tooltip">
-              Please provide a valid pincode.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationTooltip05" style="color:#fff;border-color:#fff;fill-color:#000">Age</label>
-            <input type="text" class="form-control" id="validationTooltip05" placeholder="Age" required>
-            <div class="invalid-tooltip">
-              Please provide a valid age.
-            </div>
-          </div>
-        </div>
-        <button class="btn btn-lg btn-outline-primary" href="#" style="color:#fff;border-color:#fff;fill-color:#000" type="submit" align="center1">Register</button>
+    <form action="" method="POST" id="registrationform">
+        <h3 align="center">Register</h3>
+        <div class="alert">Registered!</div>
+        <fieldset>
+          <!-- Section 1 -->
+          <legend >Your Basic Info</legend>
+          <label class="" for="name">Name</label>
+          <input type="text" name="name" value="" id="name" required />
+    
+          <label class="" for="email">Email</label>
+          <input type="email" name="email" value="" id="email" required />
+    
+          <label class="" for="age">Age</label>
+          <input type="age" name="age" value="" id="age" required />
+
+          <label>Gender</label>
+          <select name="gender" id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+
+        </fieldset>
+    
+        <fieldset>
+          <!-- section 2 -->
+          <legend>Profile</legend>
+    
+          <label class="" for="bio">Bio</label>
+          <textarea name="bio" id="bio" required></textarea>
+
+          <br /><br />
+          <label>Experience</label>
+    
+          <select name="experience" id="experience" required>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+    
+    
+          <button class="btn btn-lg btn-outline-secondary" type="submit" sendMessage()>Register</button>
       </form>
+    
   </div>
 </div>
 </div>
@@ -212,5 +301,7 @@
       </div>
 </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
