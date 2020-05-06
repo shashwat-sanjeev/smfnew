@@ -8,10 +8,19 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    
 <style>
     * {
     box-sizing: border-box;
 }
+
+#uploader {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 50%;
+                margin-top: 30px;
+                margin-bottom: 5px;
+            }
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -50,12 +59,12 @@ textarea,
 select {
   background: lightsteelblue;
   border: 1px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   box-shadow: 2px;
   color: rgb(240, 240, 234);
   background-color: rgb(127, 127, 131);
   width: 100%;
-  padding: 1px;
+  padding: 0px;
   margin: 0;
   height: auto;
   font-size: 15px;
@@ -187,6 +196,9 @@ button {
             <option value="female">Female</option>
           </select>
 
+          <label class="" for="location">Location</label>
+          <textarea name="location" id="location" required></textarea>
+
         </fieldset>
     
         <fieldset>
@@ -204,8 +216,10 @@ button {
             <option value="Intermediate">Intermediate</option>
             <option value="Advanced">Advanced</option>
           </select>
-    
-    
+          
+          <progress value="0" max="100" id="uploader">0%</progress>
+          <input type="file" value="upload" id="fileButton"/>
+          
           <button class="btn btn-lg btn-outline-secondary" type="submit" sendMessage()>Register</button>
       </form>
     
