@@ -14,7 +14,7 @@
 	            height: 100%;
             }
            .imagebg {
-	            background-image: url("assets/4k-hd-background.jpg");
+	            background-image: url("../assets/4k-hd-background.jpg");
 	            background-repeat: no-repeat;
 	            background-position: center center;
 	            background-size: cover;
