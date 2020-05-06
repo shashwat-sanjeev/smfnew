@@ -15,18 +15,20 @@
 }
 
 #uploader {
-                -webkit-appearance: none;
-                appearance: none;
-                width: 50%;
+                -webkit-appearance: search;
+                appearance: button;
+                width: 100%;
                 margin-top: 30px;
                 margin-bottom: 5px;
+                background: rgb(40, 40, 41);
             }
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-  color: rgb(24, 23, 22);
+  color: rgb(241, 239, 237);
   background-color: rgb(7, 7, 7);
+  
 }
 
 form {
@@ -34,8 +36,8 @@ form {
   margin: 35px auto;
   border-radius: 10px;
   padding: 10px 25px;
- background: rgba(0, 0, 0, 0.91);
- font-color:#fff;
+  background: rgba(0, 0, 0, 0.91);
+  font-color:#fff;
 }
 
 h3 {
@@ -59,7 +61,7 @@ input[type='email'],
 input[type='age'],
 textarea,
 select {
-  background: lightsteelblue;
+  background: rgb(99, 98, 98);
   border: 10px;
   margin-bottom: 10px;
   box-shadow: 2px;
@@ -116,7 +118,7 @@ label {
 
 button {
   padding: 25px 40px;
-  color: whitesmoke;
+  color: rgb(26, 25, 25);
   background-color: rgb(36, 159, 235);
   font-size: 15px;
   margin: 30px 0px 0px;
@@ -248,12 +250,13 @@ width:500px;
             <option value="Advanced">Advanced</option>
           </select>
           
-          <progress value="0" max="100" id="uploader">0%</progress>
-          <input type="file" value="upload" id="fileButton"/>
+          <progress class="progress-bar" value="0" max="100" id="uploader">100%</progress>
+          <input class="btn btn-secondary btn-sm" type="file" value="upload" id="fileButton"/>
+          
           
           <button class="btn btn-lg btn-outline-secondary" type="submit" sendMessage()>Register</button>
       </form>
-    
+      
   </div>
 </div>
 </div>
