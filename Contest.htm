@@ -28,19 +28,31 @@ html {
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 100%;
   margin-bottom: 16px;
-  padding: 0 8px;
+  padding: 100px 8px;
+
+  /* The image used */
+  background-image: url('assets/ballet.jpg');
+	
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+  margin: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.about-section {
+.contest {
   padding: 50px;
   text-align: center;
   background-color: black;
@@ -48,7 +60,7 @@ html {
 }
 
 .container2 {
-  padding: 0 16px;
+  padding: 5px 16px;
   color:black;
 }
 
@@ -64,10 +76,10 @@ html {
 }
 
 .button {
-  border: none;
+  border-style: inset;
   outline: 0;
-  display: inline-block;
-  padding: 8px;
+  display: block;
+  padding: 10px;
   color: white;
   background-color: #000;
   text-align: center;
@@ -93,60 +105,48 @@ html {
 <span style="font-size:30px;cursor:pointer;position:fixed;color:#fff;margin-left:10px" onclick="openNav()">&#9776; </span>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="new.html">Home</a>
-  <a href="subscription.html">Subscription</a>
+  <a href="index.html">Home</a>
+  <a href="#">Subscription</a>
   <a href="#">Category</a>
   <a href="#">Setting</a>
-  <a href="form.html">Feedback</a>
+  <a href="#">Feedback</a>
   <a href="about us.html">About us</a>
   <a href="#">Contact</a>
 </div>
-<div class="about-section">
-  <h1>About Us </h1>
-  <p>We are born to teach dance.jbuf u idhiw ihdwi iwdhwi widhiw iwdiwheiw w iehwihwi iwdhiwhdwi idwhdiw ihwi iwh iwhidwiiwi
-jdhe hiehdiefiei eieiieheuffbehfdbfefjebfuebfjebfjebfjdbfje efuehfeeeeeeeejfejdbfjdf eufhefuefef ef iehfiehfehf  
- ueufefehfehfiheife ifei ei dfefehf ehfe ef eified9wshifuhsfk k fuwfowfw n</p>
+<div class="contest">
+  <h1><strong>Contest</strong> </h1>
+  <p>This contest is organised to boost your passion of DANCE.this is organised by the team SMURFO.
+      Winner will get award and certification will be there.</p>
   
 </div>
 
-<h2 style="text-align:center;color:black;">Our Team</h2>
-<div class="row">
-  <div class="column">
+<div class="column">
+    <div class="row">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Deep" style="width:400px;height:300px;">
+      <img src="#" alt="posture 1" style="width:500px;height:400px;">
       <div class="container2">
-        <h2>Deepandra yadav</h2>
-        <p class="title">CEO & Founder</p>
-        <p>adcgfer</p>
-        <p>deep@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+       
+        <p><button class="button">Click Here to Partcipate</button></p>
       </div>
     </div>
   </div>
 
-  <div class="column">
+  <div class="row">
     <div class="card">
-      <img  src="https://media.wired.com/photos/598e35994ab8482c0d6946e0/master/w_2560%2Cc_limit/phonepicutres-TA.jpg" alt="Mike" style="width:400px;
- height:300px;">
+      <img  src="#" alt="posture 2" style="width:500px; height:400px;">
       <div class="container2">
-        <h2> abc</h2>
-        <p class="title">Art Director</p>
-        <p>abcd.</p>
-        <p>xyz@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        
+        <p><button class="button">Click Here to Partcipate</button></p>
       </div>
     </div>
   </div>
   
-  <div class="column">
+  <div class="row">
     <div class="card">
-      <img src="https://blog.photofeeler.com/wp-content/uploads/2017/09/tinder-photo-size-tinder-picture-size-tinder-aspect-ratio-image-dimensions-crop.jpg" alt="John" style="width:400px;height:300px;">
+      <img src="#" alt="posture3" style="width:500px;height:400px;">
       <div class="container2">
-        <h2>abc</h2>
-        <p class="title">Designer</p>
-        <p>abcd tvy yyy yy.</p>
-        <p>xyz@gmail.com</p>
-        <p><button class="button">Contact</button></p>
+        
+        <p><button class="button">Click Here to Partcipate</button></p>
       </div>
     </div>
   </div>
@@ -166,10 +166,10 @@ jdhe hiehdiefiei eieiieheuffbehfdbfefjebfuebfjebfjebfjdbfje efuehfeeeeeeeejfejdb
           <div class="col-xs-6 col-md-3">
             <h6>Categories</h6>
             <ul class="footer-links">
-              <li><a href="new.html">Home</a></li>
-              <li><a href="subscription.html">Subscription</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Subscription</a></li>
               <li><a href="#">Setting</a></li>
-              <li><a href="form.html">feedback</a></li>
+              <li><a href="#">feedback</a></li>
               <li><a href="#">projects</a></li>
              
             </ul>
@@ -178,7 +178,7 @@ jdhe hiehdiefiei eieiieheuffbehfdbfefjebfuebfjebfjebfjdbfje efuehfeeeeeeeejfejdb
           <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="about us.html">About Us</a></li>
+              <li><a href="#">About Us</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Contribute</a></li>
               <li><a href="#">Privacy Policy</a></li>
@@ -209,7 +209,7 @@ jdhe hiehdiefiei eieiieheuffbehfdbfefjebfuebfjebfjebfjdbfje efuehfeeeeeeeejfejdb
 </footer>
 <script>
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "100%";
 }
 
 function closeNav() {
