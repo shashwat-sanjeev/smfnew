@@ -313,7 +313,7 @@ body {
 	}
 	@media only screen and (max-width:400px){
 		.main {
-			width: 60px;
+			width: 10px;
 			margin: 50px auto;
 			
 			background: rgba(0, 0, 0, 0.5);
