@@ -1,0 +1,40 @@
+#cont{
+    width: 80%;
+    border:solid 2px grey;
+    border-radius: 5px;
+    text-decoration-color: white;
+    background-color: rgba(0, 0, 0, 0.91);
+    margin-bottom: 10px;
+}
+body{
+    /*background:linear-gradient(120deg,#f3c786, #d4a8ff);*/
+    
+        /* The image used */
+        background-image: url('../assets/ballet.jpg');
+      
+        /* Full height */
+        height: 100%; 
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+}
+.jumbotron{
+    background: black;
+    height: 60%;
+
+}
+#top{
+    background: black;
+}
+.fas{
+    width: 20px;
+    height: 20px;
+    color:white;
+}
+h1,.display-4,.lead,.display-8{
+    color:white;
+}
