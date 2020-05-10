@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Routines</title>
+    <style>
+  body, html .gridcontainer{
+  height: 100%;
+  }
+  
+  .parallax {
+  /* The image used */
+  background-image: url('images/ballet.jpg');
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+    .parallax1 {
+  /* The image used */
+   background: rgba(0, 0, 0, 0.91);
+  /* Full height */
+  height: 400px; 
+      
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  #carouselExampleControls1,#carouselExampleControls2,#carouselExampleControls3{
+    display: inline-block;
+  }
+  #caption1,#caption2,#caption3{
+    display: inline-block;
+  }
+  #caption1{
+    float:right;
+  }
+  #caption3{
+    float:right;
+  }
+  #caption0{
+    margin: 0 200px;
+  }
+  #carouselExampleControls0{
+   /* margin: 0 auto;*/
+    align-content: center;
+  }
+  #carouselExampleControls2{
+    float: right;
+  }
+  .carousel-caption {
+  position: absolute;
+  right: ((100% - $carousel-caption-width) / 2);
+  bottom: 20px;
+  /*left: ((100% - $carousel-caption-width) / 2);*/
+  z-index: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $carousel-caption-color;
+  text-align: left;
+  margin-bottom:-50px;margin-left: -50px;
+}
+.carousel{
+  position: absolute;
+  z-index: 0;
+}
+</style>
+  </head>
+  <body>
+    <!-- navigation -->
+    <span style="font-size:30px;cursor:pointer;position:fixed;z-index:10;color:#fff;margin-left:10px;" onclick="openNav()">&#9776; </span>
+        <div id="mySidenav" class="sidenav">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <a href="new.html">Home</a>
+           <a href="subscription.html">Subscription</a>
+           <a href="#">Category</a>
+           <a href="#">Setting</a>
+           <a href="form.html">Feedback</a>
+           <a href="about us.html">About us</a>
+           <a href="#">Contact</a>
+        </div>
+        <!-- videos -->
+<div class="parallax">
+<div class="gridcontainer" >
+<div class="center2">
+<div class="main">
+  <div class="form-group has-search">
+    <span class="fa fa-search form-control-feedback"></span>
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div>
+<div class="pull-right"> 
+<div class="btn-group mt-2"> 
+
+<a class="btn  btn-outline-warning mr-3" href="index.html" style="color:#fff;border-color:#fff;fill-color:#000">Login</a>
+<a class="btn  btn-outline-danger" style="color:#fff;border-color:#fff;fill-color:#000">Trending</a>
+         </div>
+     </div>
+     <div style="display: inline-block;clear: both;"></div>
+
+      <!-- Videos in 0th category -->
+
+  <div class="category0" style="border-radius:20px  ; background-image: linear-gradient(180deg, rgba(0,123,255,0.3) 0%, rgba(0,123,255,0.15) 13%, rgba(0,123,255,0) 100%);position: relative;top:150px;">
+
+    <div id="caption2" class="" style="color: #fff; margin-top: 10px;position: relative;top:10px;">
+        <a href="#" role="button" class="btn btn-outline-primary btn-sm" style="text-decoration: none; margin-bottom: .5rem; font-size: 1.5rem;"><strong>CLASSES</strong></a>
+        <p style="">Comprehensive classes focussed at efficient rendering of choreographies, skills pertaining to various styles, freestyles and much more.</p>
+      </div>
+
+
+    
+  <div id="carouselExampleControls0" class="carousel slide" data-ride="carousel" style="width: 600px;height:300px;position:relative;top:10px;left: 0px;margin-right:0px">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/ballet.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2)" alt="First video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/dance.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);" alt="Second video">
+        <div class="carousel-caption d-none d-md-block" style="position: z-index:0;">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/4k-hd-background.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2)" alt="Third video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls0" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls0" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a><br><br><br>
+
+</div>
+
+    </div>
+    <div style="display: inline-block;clear: both;"></div>
+    <br><br><br><br><br><br><br><br>
+
+
+    <!-- Videos in 1st category -->
+
+
+    <div class="category1" style="border-radius:20px  ; background-image: linear-gradient(180deg, rgba(200,0,0,0.3) 0%, rgba(200,0,0,0.15) 13%, rgba(200,0,0,0) 100%);position: relative;">
+    
+  <div id="carouselExampleControls1" class="carousel slide col-md-6 col-sm-8 col-xs-6 col-lg-12" data-ride="carousel" style="width: 400px;height:250px;position:relative;top:10px;left: 0px;margin-right:100px">
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/ballet.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2)" alt="First video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/dance.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);" alt="Second video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item active">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/4k-hd-background.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2)" alt="Third video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a><br><br>
+
+</div>
+
+  <div id="caption1" class="col-md-4 col-sm-12 col-xs-12 col-lg-3" style="color: #fff; margin-top: 20px; position: relative;top:-10px;">
+      <a href="#" role="button" class="btn btn-outline-danger btn-lg" style="text-decoration: none; margin-bottom:0.5rem;line-height: 0.75;"><strong>LIVE</strong></a>
+      <p>Watch live videos now!<br><br></p>
+  </div>
+
+      <br>
+
+</div>
+<div style="display: inline-block;clear: both;"></div>
+    <br><br><br><br><br>
+
+        <!-- Videos in 2nd category -->
+
+    <div class="category2" style="border-radius:20px  ;background-image: linear-gradient(180deg, rgba(0,123,255,0.3) 0%, rgba(0,123,255,0.15) 13%, rgba(0,123,255,0) 100%);height: 350px">
+
+      <div id="caption2" class="col-md-4 col-sm-12 col-xs-12 col-lg-3" style="color: #fff; margin-top: 10px;position: relative;top:10px;">
+        <a href="#" role="button" class="btn btn-outline-primary btn-sm" style="text-decoration: none; margin-bottom: .5rem; font-size: 1.5rem;"><strong>CLASSES</strong></a>
+        <p style="">Comprehensive classes focussed at efficient rendering of choreographies, skills pertaining to various styles, freestyles and much more.</p>
+      </div>
+
+  <div id="carouselExampleControls2" class="carousel slide col-md-7 col-sm-8 col-xs-6 col-lg-12" data-ride="carousel" style="width: 400px;height:250px;position:relative;top:10px;left: 0px;margin-left:0px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/ballet.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2)" alt="First video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/dance.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);" alt="Second video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/4k-hd-background.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2)" alt="Third video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <br><br><br>
+</div>
+
+    </div>
+          <div style="display: inline-block;clear: both;"></div>  
+
+              <!-- Videos in 3rd category -->
+
+<div class="category3" style="border-radius:20px  ; background-image: linear-gradient(180deg, rgba(200,0,0,0.3) 0%, rgba(200,0,0,0.15) 13%, rgba(200,0,0,0) 100%);position: relative;">
+    
+  <div id="carouselExampleControls3" class="carousel slide col-md-6 col-sm-8 col-xs-6 col-lg-12" data-ride="carousel" style="width: 400px;height:250px;position:relative;top:10px;left: 0px;margin-right:100px">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/ballet.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2)" alt="First video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/dance.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);" alt="Second video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="home.html">
+        <img class="d-block img-fluid" src="images/4k-hd-background.jpg" style="border-radius: 10px; box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2)" alt="Third video">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Class_name</h3>
+          <p>song_Name</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a><br><br>
+
+</div>
+
+  <div id="caption3" class="col-md-4 col-sm-12 col-xs-12 col-lg-3" style="color: #fff; margin-top: 20px; position: relative;top:-10px;">
+      <a href="#" role="button" class="btn btn-outline-danger btn-lg" style="text-decoration: none; margin-bottom:0.5rem;line-height: 0.75;"><strong>LIVE</strong></a>
+      <p>Watch live videos now!<br><br></p>
+  </div>
+
+      <br>
+
+</div>
+    <br><br><br><br>
+
+
+
+  </div>
+        <!-- footer -->
+        <footer class="site-footer" style="position: relative; !important">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify"> <i>Smurfo </i>is an initiative  by IITK almuni to help people learn online dance courses.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="new.html">Home</a></li>
+              <li><a href="subscription.html">Subscription</a></li>
+              <li><a href="#">Setting</a></li>
+              <li><a href="form.html">feedback</a></li>
+              <li><a href="#">projects</a></li>
+             
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Contribute</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">Smurfo</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+function innerwidth() {
+  return window.innerwidth()+"px";
+}
+}
+</script>
+    <!-- <h1>Hello, world!</h1> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+  </body>
+</html>
